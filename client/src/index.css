@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-ink: #0D0D0D;
+  --color-paper: #F5F2EB;
+  --color-accent: #E8572A;
+  --color-muted: #9A9A8E;
+  --color-surface: #FFFFFF;
+  --color-border: #E2DDD6;
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-ink text-paper font-semibold px-6 py-3 hover:bg-accent transition-colors duration-200 text-sm tracking-wide uppercase cursor-pointer;
+  }
+  .btn-ghost {
+    @apply border border-border text-ink font-semibold px-6 py-3 hover:border-ink transition-colors duration-200 text-sm tracking-wide uppercase cursor-pointer;
+  }
+  .input-field {
+    @apply w-full border border-border bg-surface px-4 py-3 text-sm focus:outline-none focus:border-ink transition-colors duration-200;
+  }
+  .card {
+    @apply bg-surface border border-border p-6 hover:border-ink transition-colors duration-200;
+  }
+}
+
+/* Quill editor styles */
+.ql-container {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 16px !important;
+  border: none !important;
+  height: calc(100vh - 160px) !important;
+}
+.ql-toolbar {
+  border: none !important;
+  border-bottom: 1px solid #E2DDD6 !important;
+  background: #FAFAF8 !important;
+}
+.ql-editor {
+  padding: 48px 64px !important;
+  max-width: 860px;
+  margin: 0 auto;
+  line-height: 1.8 !important;
+}
+.ql-editor.ql-blank::before {
+  font-style: normal !important;
+  color: #9A9A8E !important;
+}
