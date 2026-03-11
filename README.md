@@ -6,8 +6,8 @@ A full-stack real-time document editor where multiple users can collaborate simu
 
 ## 🚀 Live Demo
 
-- **Frontend**: [collab-app-omega.vercel.app/](https://collab-app-omega.vercel.app/)
-- **Backend**: [https://group-1-8vy2.onrender.com/](https://https://group-1-8vy2.onrender.com/)
+- **Frontend**: [collab-app-omega.vercel.app](https://collab-app-omega.vercel.app/)
+- **Backend**: [group-1-8vy2.onrender.com](https://group-1-8vy2.onrender.com/)
 
 ---
 
@@ -73,8 +73,8 @@ collab-platform/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/collab-platform.git
-cd collab-platform
+git clone https://github.com/Maddy-MM/Group-1.git
+cd Group-1
 ```
 
 ### 2. Set up Supabase
@@ -185,4 +185,4 @@ User A types → Quill fires text-change event
 
 ## 👥 Team
 
-Built in 5 hours at a hackathon by Group 1.
+Built in 5 hours at a hackathon.
