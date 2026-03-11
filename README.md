@@ -73,8 +73,8 @@ collab-platform/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/Maddy-MM/Group-1.git
-cd Group-1
+git clone https://github.com/namanalagh783/collab-app.git
+cd collab-app
 ```
 
 ### 2. Set up Supabase
